@@ -53,7 +53,7 @@ def sine_tile(shape, angle_degrees, avg_color, max_color):
     along_range = along_max - along_min
     amplitude = min(h, w) * 0.80
     periods = 4
-    thickness = 3
+    thickness = 2
     curve_along = np.linspace(along_min, along_max, max(h, w) * 20)
     curve_across = amplitude * np.sin(2 * np.pi * periods * (curve_along - along_min) / along_range)
     curve_x = curve_along * np.cos(angle) - curve_across * np.sin(angle) + w / 2
